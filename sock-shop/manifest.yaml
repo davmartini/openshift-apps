@@ -39,7 +39,7 @@ defaultAddCapabilities:
 - NET_BIND_SERVICE
 - DAC_OVERRIDE
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: carts-db
@@ -104,7 +104,7 @@ spec:
     name: carts-db
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: carts
@@ -356,7 +356,7 @@ spec:
     name: catalogue-db
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: catalogue
@@ -426,7 +426,7 @@ spec:
     name: catalogue
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: front-end
@@ -506,7 +506,7 @@ spec:
     name: front-end
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orders-db
@@ -580,7 +580,7 @@ spec:
     name: orders-db
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orders
@@ -660,7 +660,7 @@ spec:
     name: orders
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: payment
@@ -728,7 +728,7 @@ spec:
     name: payment
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: queue-master
@@ -794,7 +794,7 @@ spec:
     name: queue-master
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: rabbitmq
@@ -859,7 +859,7 @@ spec:
     name: rabbitmq
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: session-db
@@ -911,7 +911,7 @@ spec:
     name: session-db
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: shipping
@@ -992,7 +992,7 @@ spec:
 
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user-db
@@ -1059,7 +1059,7 @@ spec:
 
 
 ---
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: user
